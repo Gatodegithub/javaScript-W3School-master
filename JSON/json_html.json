@@ -1,0 +1,29 @@
+{
+    "Alumnos":
+    [
+        {
+            "nombre": "Aldo",
+            "apellido": "Saavedra",
+            "Edad": 22,
+            "Musculoso": true
+        },
+        {
+            "nombre": "Camilo",
+            "apellido": "Pino",
+            "Edad": 32,
+            "Musculoso": false
+        },
+        {
+            "nombre": "Felipe",
+            "apellido": "Del Carmen",
+            "Edad": 12,
+            "Musculoso": false
+        },
+        {
+            "nombre": "Antonio",
+            "apellido": "Perez",
+            "Edad": 50,
+            "Musculoso": true
+        }
+    ]
+}

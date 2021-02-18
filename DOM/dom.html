@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model</title>
+    <style>
+        .cajaprincipal {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        #container {
+            display: inline-block;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+
+        .contenedor, .contenedor2 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: red;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <p id="demo" class="ninguna" data-texto="Hola mundo" title="Hazme click!"></p>
+    <p id="demo1" title="Soy demo1"></p>
+    <p id="demo2" class="intro"></p>
+    <main id="main">
+        <p id="demo3"></p>
+        <p id="demo4" class="intro"></p>
+        <p id="demo5" class="ninguna"></p>
+    </main>
+    <p id="datosform"></p>
+
+    <hr>
+
+    <form id="frm1">
+        <p>First name:</p>
+        <input type="text" name="fname" id="fname" value="Donald"><br>
+        <p>Last name:</p>
+        <input type="text" name="lname" value="Duck"><br><br>
+        <input type="button" value="Submit" onclick="myFunction()">
+    </form>
+
+    <p><button id="botonsito">Click Me</button></p>
+
+    <div class="cajaprincipal">
+
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+    
+        <div class="contenedor" id="contenedor">
+            TOCAME
+        </div>
+
+        <div class="contenedor2" id="contenedor2">
+            Presioname
+        </div>
+
+    </div>
+    
+    <!-- <script src="1Intro.js"></script> -->
+    <!-- <script src="2Finding.js"></script> -->
+    <script src="3AnimationEvents.js"></script>
+</body>
+</html>

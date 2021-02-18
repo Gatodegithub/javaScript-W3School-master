@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>w3school Json</title>
+    <style>
+
+        table {
+            /* Elimina la separacion de las celdas */
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #444;
+            color: #fff;
+        }
+
+        td, th {
+            text-align: center;
+            padding: 0.5em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <table>
+        <!-- El titulo de la tabla -->
+        <caption>Alumnos</caption>
+
+        <colgroup>
+        <!-- Debo poner un <col> por cada columna que tenga mi tabla, pero evito esto si añado span para indicar 
+        de que columna quiero que empieze, ahi digo que esa es la 4 y la siguiente osea la 5 que sea amarilla -->
+        <col span="4">
+        <col style="background-color: yellow;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <!-- Le doy rowspan para que como el html se repite tmb en la fila de abajo, es ocupe 2 filas -->
+                <td rowspan="2">Html</td>
+                <td>Php</td>
+                <td>Javascript</td>
+                <td rowspan="2">Phyton</td>
+                <td>Css</td>
+            </tr>
+
+            <tr>
+                <!-- Elimino la celda para que el rowspan de la fila de arriba ocupe este espacio -->
+                <td>Php</td>
+                <td>Javascript</td>
+
+                <td>Css</td>
+            </tr>
+
+            <tr>
+                <!-- Para agrupar las celdas de la fila uso colspan y la cantidad de celdas -->
+                <td colspan="5">Recreo</td>
+            </tr>
+
+            <tr>
+                <td>Sql</td>
+                <td>Angular</td>
+                <td>Laravel</td>
+                <td>Json</td>
+                <td>Jquery</td>
+            </tr>
+
+        <tfoot>
+
+            <tr>
+                <td>6 creditos</td>
+                <td>4 creditos</td>
+                <td>5 creditos</td>
+                <td>1 creditos</td>
+                <td>2 creditos</td>
+            </tr>
+
+        </tfoot>
+
+        </tbody>
+
+
+
+    </table>
+
+    <!-- <script src="1Intro.js"></script> -->
+    <!-- <script src="2Avanzado.js"></script> -->
+    <script src="3JsonHTML.js"></script>
+</body>
+
+</html>

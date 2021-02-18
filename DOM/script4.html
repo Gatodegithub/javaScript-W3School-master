@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2,
+        #quitar {
+            margin: 0;
+            padding: 0;
+        }
+
+        #myDiv1,
+        #myDiv2 {
+            background-color: coral;
+            padding: 30px;
+            width: 500px;
+            height: 100px;
+        }
+
+        #myP1,
+        #myP2 {
+            background-color: white;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="demo" title="Hazme click!"></p>
+    <p id="demo1" title="Soy demo1"></p>
+    <p id="demo2"></p>
+
+    <input type="button" value="Click me!" id="boton">
+
+    <div id="myDiv1">
+        <h2>Bubbling:</h2>
+        <p id="myP1">Click me!</p>
+    </div>
+    <button id="quitar">Quitar evento</button>
+
+    <br>
+
+    <div id="myDiv2">
+        <h2>Capturing:</h2>
+        <p id="myP2">Click me!</p>
+    </div>
+
+    <script src="4addEventBubblingCapturing.js"></script>
+</body>
+</html>

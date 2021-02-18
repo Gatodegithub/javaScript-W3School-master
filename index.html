@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>w3school</title>
+</head>
+<body>
+    
+    <div id="demo"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <p id="parrafin"></p>
+    <p id="parrafin2"></p>
+    <button id="boton1">Boton 1</button>
+    <button id="boton2">Boton 2</button>
+    <input type="number" id="age" value="20" min="1" max="100" maxlength="2">
+
+    <hr> <!-- Practica -->
+
+    <div class="container">
+        <input type="text" name="campo" id="campo" multiple>
+        <button id="button">Comprobar</button>
+    </div>
+
+    <script>
+        const campo = document.querySelector('#campo');
+        const button = document.querySelector('#button');
+
+        button.addEventListener('click', e => {
+            const regex = /[0-9]{3}/; //Buscar 3 numeros
+            const regex1 = /sol/g;
+            const regex2 = /^[\s]*(.*?)[\s]*$/; //regrese cadenas de texto sin espacios en blanco al inicio y final
+            const regex3 = /<([a-z0-6]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)/; //etiquetas html
+            const regex4 = /\B#(?:[a-f0-9A-F]{6}|[a-f0-9A-F]{3})\b/; //color hexadecimal #fff o #ffffff
+            const regex5 = /\b[\w.!#$%&*+\/=?{|}]+@[\w-]+(?:\.[\w]+)+\b/; //email
+            const regex6 = /^[a-zA-Z_-]{3,16}$/; //nombre de usuario [_-] se permiten los caracteres de la a a la z, de la Z a la Z mayusculas y los caracteres _ -
+            const regex7 =  /(?=^.{6,}$)((?=.*\w)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[|!"$%&\/\(\)\?\^\'\\\+\-\*]))^.*/; //pasword: 1 mayuscula, 1 minuscula, 1 numero y 1 caracter especial
+
+            const validation = campo.value.match(regex7);
+            console.log(validation);
+        })
+    </script>
+
+    <!-- <button onclick="this.innerHTML = Date()">The time is?</button>  Con this indico ESTE ELEMENTO-->
+
+    <!-- <script src="0MisNotas.js"></script> -->
+    <!-- <script src="1Tutorial.js"></script> -->
+    <!-- <script src="2Strings.js"></script> -->
+    <!-- <script src="3Numbers.js"></script> -->
+    <!-- <script src="4Arrays.js"></script> -->
+    <!-- <script src="5Dates.js"></script> -->
+    <!-- <script src="6Math.js"></script> -->
+    <!-- <script src="7Boolean.js"></script> -->
+    <!-- <script src="8Ciclos.js"></script> -->
+    <!-- <script src="9TypeConversion.js"></script> -->
+    <!-- <script src="10RegularExpressions.js"></script> -->
+    <!-- <script src="11Errors.js"></script> -->
+    <!--Todas las variables globales definidas con VAR pertenecen al objeto window y pueden ser usadas en otros scripts ya que el objeto window es el scope global en html.-->
+    <!-- <script src="12Scopevar-Hoisting.js"></script> -->
+        <!-- <script> console.log(window.carName) </script> -->
+    <!-- <script src="13StrictMode-This.js"></script> -->
+    <!-- <script src="14Let-Const-Arrowfunc.js"></script> -->
+    <!-- <script src="15Class.js"></script> -->
+    <!-- <script src="16Final.js"></script> -->
+</body>
+</html>
